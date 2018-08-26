@@ -1,0 +1,488 @@
+
+/*/////////////////////////////////
+////////// GENERAL STYLE //////////
+/////////////////////////////////*/
+
+body{
+    margin: 0px;
+    background: #efefef;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-responsive{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*/////////////////////////////////
+//////////// WORKOUT //////////////
+/////////////////////////////////*/
+
+.workout-element{
+    margin: 15px 0px;
+    background: #fff;
+}
+
+/*/////////////////////////////////
+///////////// HEADER //////////////
+/////////////////////////////////*/
+
+#header{
+    width: 100%;
+    background: #5a5a5a;
+    color: #fff;
+    position: relative;
+}
+
+.header-inner{
+    padding: 15px 10px;
+}
+
+.header-naslov{
+    margin: 0px;
+    text-align: center;
+}
+
+/*/////////////////////////////////
+///////// WORKOUT HEADER //////////
+/////////////////////////////////*/
+
+.workout-header{
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.wh-element{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wh-avatar{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.wh-username{
+    width: calc(100% - 120px);
+    margin-right: 10px;
+}
+
+.wh-date{
+    width: 40px;
+    text-align: center;
+}
+
+.hot-featured{
+    margin: 0px;
+    color: #ff9000;
+}
+
+.username-text{
+    margin: 0px 0px 5px;
+}
+
+/*/////////////////////////////////
+////////// WORKOUT BODY ///////////
+/////////////////////////////////*/
+
+.workout-body{
+    padding: 15px 0px;
+    background: #fdfdfd;
+}
+
+.workout-name{
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #6d6d6d;
+}
+
+.workout-name:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 1px;
+    background: #eaeaea;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.workout-details{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.feed-ikona{
+    color: #6d6d6d;
+    font-size: 24px;
+}
+
+.data-item{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 15px;
+}
+
+.data-icon, .data-text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.data-icon{
+    margin-right: 10px;
+}
+
+.data-text{
+    font-size: 18px;
+    color: #6d6d6d;
+    font-weight: 400;
+}
+
+/*/////////////////////////////////
+///////// WORKOUT TOOLS ///////////
+/////////////////////////////////*/
+
+.workout-tools{
+    border-top: 1px solid #eaeaea;
+    padding: 13px 20px;
+}
+
+.workout-tools:before, .workout-tools:after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.tools-column{
+    width: 50%;
+    float: left;
+}
+
+.tools-column div:first-child{
+    margin-right: 10px;
+}
+
+.tools-column.column-right{
+    float: right;
+    text-align: right;
+}
+
+.tools-icon, .tools-text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tools-icon{
+    font-size: 30px;
+    color: #969696;
+}
+
+.tools-text{
+    color: #6d6d6d;
+    font-size: 20px;
+}
+
+#like-post{
+    padding: 0px;
+    background: transparent;
+    border: 0px;
+    font-size: 30px;
+    color: #969696;
+}
+
+.tools-icon.liked #like-post{
+    color: rgb(240, 87, 87);
+}
+
+/*/////////////////////////////////
+///////////// AVATAR //////////////
+/////////////////////////////////*/
+
+.user-avatar{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/*/////////////////////////////////
+///////// WORKOUT SINGLE //////////
+/////////////////////////////////*/
+
+.workout{
+    position: relative;
+    background: #fff;
+}
+
+.workout-buttons{
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.workout-single-body{
+    padding: 0px 15px 30px;
+}
+
+.wb-wrap{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wb-lijevo{
+    text-align: left;
+}
+
+.wb-desno{
+    text-align: right;
+}
+
+.wb-button{
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0px 15px;
+    height: 57px;
+    font-size: 24px;
+    z-index: 1;
+    border: 0px;
+    border-radius: 40px;
+}
+
+.wb-button.button-name{
+    font-size: 17px;
+}
+
+.wb-button:focus{
+    outline: none;
+    background: rgba(0, 0, 0, 1);
+}
+
+.wb-button.button-nazad{
+    border-radius: 50%;
+    width: 57px;
+    text-align: center;
+    padding: 0px;
+}
+
+.workout-single-image{
+    width: 100%;
+}
+
+.workout-single-data{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wsd-name{
+    margin-top: 25px;
+}
+
+.wsd-data{
+    font-size: 18px;
+    font-weight: 600;
+    color: #adadad;
+}
+
+.workout-single-likes{
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.workout-single-likes .tools-icon{
+    border: 1px solid #969696;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.workout-single-likes #like-post{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.workout-single-likes .tools-text{
+    display: block;
+}
+
+.workout-exercise{
+    margin-bottom: 15px;
+}
+
+.we-image{
+    width: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.play-ikona{
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.we-data{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 130px);
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.we-name{
+    color: black;
+}
+
+.we-reps{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6d6d6d;
+}
+
+.workout-exercises, .workout-percentages, .view-all-comments, #comments-list, .workout-user-comment{
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.percentage-item{
+    margin: 10px 0px;
+}
+
+.percentage-name, .percentage-bar{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.percentage-name{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+    width: 140px;
+    color: #969696;
+}
+
+.percentage-bar{
+    width: calc(100% - 140px);
+    background: #efefef;
+    overflow: hidden;
+    height: 30px;
+}
+
+.percentage-bar .percentage-bar-fill{
+    background: #969696;
+    height: 100%;
+}
+
+.percentage-bar, .percentage-bar-fill{
+    border-radius: 7px;
+}
+
+.pause-bar{
+    background: transparent;
+}
+
+.percentage-bar .pause-text{
+    color: #5a5a5a;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.wc-avatar, .wc-tekst{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wc-avatar{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.wc-tekst{
+    width: calc(100% - 70px);
+}
+
+.wc-name{
+    font-weight: 600;
+}
+
+.view-all-comments{
+    text-align: center;
+    color: #ff9000;
+}
+
+.view-all-comments .comments-icon{
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.view-all-comments .comments-text p{
+    margin: 0px;
+}
+
+.workout-comment{
+    margin: 15px 0px;
+}
+
+.workout-comment .comment-date{
+    display: block;
+    color: #969696;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+#comments-list.no-comments{
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    border: 0px;
+}
+
+.video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+}
+
+.video{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+}
+
+.video video{
+    width: 100%;
+}

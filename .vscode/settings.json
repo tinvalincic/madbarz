@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "C:\\projekti\\madbarz"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.js": "javascriptreact"
+		}
+	}
+}

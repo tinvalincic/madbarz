@@ -1,12 +1,12 @@
 {
-  "name": "react_test",
+  "name": "madbarz_app",
   "version": "1.0.0",
-  "description": "Some basic react js",
+  "description": "Madbarz app feed, single page",
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src --inline --hot",
-    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src --inline --hot --mode development --history-api-fallback",
+    "build:prod": "webpack -p && copy src\\index.html dist\\index.html --mode production"
   },
   "keywords": [
     "reactjs"
@@ -15,7 +15,12 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-infinite-scroll-component": "^4.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
